@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:id="@+id/tvEducat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="EDUCAT"
+        android:textColor="#ffffff"
+        android:textSize="38dp" />
+
+    <TextView
+        android:id="@+id/tvExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEducat"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Let Explore!"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        tools:fontFamily="sans-serif" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="#ffffff"
+        android:hint="Username"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#ffffff"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="#88cc00"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tvRegisterHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bLogin"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:text="New User? Create Account"/>
+
+    <ImageView
+        android:id="@+id/imFacebook"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/facebook_icon" />
+
+    <ImageView
+        android:id="@+id/imTwitter"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignLeft="@id/imFacebook"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/twitter_icon" />
+
+    <ImageView
+        android:id="@+id/imInstagram"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignLeft="@id/imTwitter"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/instagram_icon" />
+
+    <ImageView
+        android:id="@+id/imGoogle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignLeft="@id/imInstagram"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/google_icon" />
+
+</RelativeLayout>
